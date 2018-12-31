@@ -6,7 +6,7 @@
 <properties>
 swagger.input属性值中的ip和port即可
 <properties>
- 执行mvn clean test完成之后，会在/target/asciidoc/pdf/目录下生成index.pdf，该pdf文件即是生成的swagger项目接口的文档
+ 执行mvn clean test完成之后，会在/target/asciidoc/pdf/目录下生成index.pdf，该pdf文件即是生成的swagger项目接口的文档。
  备注：本项目的pom.xml配置中默认生成中文的离线文档，如果只需要生成英文文档，将swagger2markup.outputLanguage的值改为EN即可。
 # 修复生成pdf时中文确实的bug
 把本地maven仓库路径⁨.m2⁩/⁨repository⁩/org⁩/asciidoctor⁩/⁨asciidoctorj-pdf⁩/1.5.0-alpha.16⁩/文件夹下的asciidoctorj-pdf-1.5.0-alpha.16.jar
