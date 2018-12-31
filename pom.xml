@@ -25,7 +25,7 @@
         <asciidoctor.html.output.directory>${project.build.directory}/asciidoc/html</asciidoctor.html.output.directory>
         <asciidoctor.pdf.output.directory>${project.build.directory}/asciidoc/pdf</asciidoctor.pdf.output.directory>
 
-        <swagger.input>${swagger.output.dir}/swagger.json</swagger.input>
+        <swagger.input>http://localhost:8080/v2/api-docs</swagger.input>
         <jackson.version>2.9.6</jackson.version>
         <springfox.version>2.9.2</springfox.version>
     </properties>
@@ -186,8 +186,7 @@
                     </dependency>
                 </dependencies>
                 <configuration>
-                    <!--<swaggerInput>${swagger.input}</swaggerInput>-->
-                    <swaggerInput>http://localhost:8080/v2/api-docs</swaggerInput>
+                    <swaggerInput>${swagger.input}</swaggerInput>
                     <outputDir>${generated.asciidoc.directory}</outputDir>
                     <config>
                         <swagger2markup.markupLanguage>ASCIIDOC</swagger2markup.markupLanguage>
@@ -241,10 +240,6 @@
                         <doctype>book</doctype>
                         <toc>left</toc>
                         <toclevels>3</toclevels>
-                        <numbered></numbered>
-                        <hardbreaks></hardbreaks>
-                        <sectlinks></sectlinks>
-                        <sectanchors></sectanchors>
                         <generated>${generated.asciidoc.directory}</generated>
                     </attributes>
                 </configuration>
