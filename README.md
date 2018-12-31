@@ -1,5 +1,7 @@
 # SwaggerPdf
 用swagger2markup导出html，pdf的离线文档。
+
+# 修复生成pdf时中文确实的bug
 把本地maven仓库路径⁨.m2⁩/⁨repository⁩/org⁩/asciidoctor⁩/⁨asciidoctorj-pdf⁩/1.5.0-alpha.16⁩/文件夹下的asciidoctorj-pdf-1.5.0-alpha.16.jar
 替换为src/jar下的asciidoctorj-pdf-1.5.0-alpha.16.jar。
 # 如果想定制字体
