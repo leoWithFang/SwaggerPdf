@@ -15,4 +15,8 @@ swagger.input属性值中的ip和port
 打开asciidoctorj-pdf-1.5.0-alpha.16.jar，在该文件中的/gems/asciidoctor-pdf-1.5.0.alpha.10/data/fonts/文件目录下加入自己的tff字体文件，
 然后修改/gems/asciidoctor-pdf-1.5.0.alpha.10/data/themes下面的default-theme.yml配置文件，
 第四行Noto Serif中的四个属性（normal，bold，italic，bold_italic）替换为自定义字体的文件名即可。
+ # 调用接口生成离线文档
+ 修改配置文件中的maven.home。
+ 新增TestController类，里面有createPdf方法，调用该方法后java代码调用maven命令进行离线文档生成。
+
 
